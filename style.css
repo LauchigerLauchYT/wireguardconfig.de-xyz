@@ -1,0 +1,340 @@
+/* General styles */
+body {
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.header {
+    background-image: url('assets/images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+}
+
+input, button {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode input, body.dark-mode button {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+pre {
+    background-color: #ffffff; /* Match the background color of the container */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode pre {
+    background-color: #1e1e1e; /* Match the background color of the container in dark mode */
+    color: #ffffff;
+}
+
+#output {
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode #output {
+    background-color: #1e1e1e;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.download-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Range input styles */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Additional styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Adjust input field styles */
+input {
+    padding: 10px; /* Adjust padding */
+    font-size: 1em; /* Adjust font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: green;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Alert styles */
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.alert-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .alert-content {
+    background: #333;
+    color: #ffffff;
+}
+
+.alert-content p {
+    margin-bottom: 20px;
+}
+
+.alert-content button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.alert-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Icon styles */
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.qrcode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+/* Menu bar styles */
+.navbar {
+    background-color: #ff0000; /* Background color */
+    padding: 10px 20px; /* Padding */
+}
+
+.navbar-brand {
+    color: #fff; /* Brand text color */
+    font-size: 1.5em; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+.navbar-nav .nav-link {
+    color: #d9cdcd; /* Link text color */
+    margin-right: 15px; /* Margin between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #bdbdbd; /* Link hover color */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Toggler border color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff; /* Background color */
+    padding: 20px 0; /* Padding */
+    border-top: 1px solid #ffffff; /* Top border */
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h5 {
+    color: #333; /* Heading color */
+    font-size: 1.2em; /* Font size */
+    margin-bottom: 10px; /* Margin below heading */
+}
+
+footer p {
+    color: #666; /* Paragraph color */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+footer ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+}
+
+footer ul li {
+    margin-bottom: 5px; /* Margin between list items */
+}
+
+footer ul li a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer .text-center {
+    background-color: #e9ecef; /* Background color */
+    padding: 10px 0; /* Padding */
+    color: #333; /* Text color */
+}
+
+/* Ensure input-group-text and form-control have the same height */
+.input-group-text {
+    display: flex;
+    align-items: center;
+    height: auto; /* Reset any height settings */
+    padding: 10px; /* Match the padding of form-control */
+    font-size: 1em; /* Match the font size of form-control */
+    border: 1px solid #ccc; /* Match the border of form-control */
+    border-radius: 4px 0 0 4px; /* Match the border-radius of form-control */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+@media (max-width: 768px) {
+    .iframe-container {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .col-8 {
+        order: 1;
+        width: 100%;
+    }
+}
